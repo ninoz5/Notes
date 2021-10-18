@@ -1,0 +1,91 @@
+
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* styling paper */
+.paper {
+  width: 600px;
+  min-height: 700px;
+  position: relative;
+  margin: 20px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #888;
+}
+
+/* styling red vertical line */
+.paper::before {
+  content: '';
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  background-color:rgb(255 255 50 / 75%);
+}
+
+/* styling blue horizontal lines */
+.pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(black 0px, black 24px, #3c3c3c 30px);
+
+}
+button,input, textarea{
+	margin-top: 1rem;
+	color: white;
+	background: none;
+	border: none;
+	font-family: 'Dancing Script', cursive;
+	font-size: 2rem;
+}
+button:hover{
+	cursor: pointer;
+}
+textarea{
+	font-size: 1.2rem;
+	height: 60%;
+}
+input, textarea{
+	width: 80%;
+	border-width: 1px;
+	border-color: grey;
+	border-style: solid;
+	border-top: 0;
+}
+/* styling text content */
+.content {
+  padding-top: 6px;
+  padding-left: 76px;
+  padding-right: 16px;
+  line-height: 25px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  color: white;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+	overflow: hidden; 
+}
+.X{
+	color: rgb(255 255 50 / 75%);
+	font-size: 1.5rem;
+	float: right;
+}
+.new, .back{
+	
+	float: right;
+}
+a{
+	color: white;
+	text-decoration-line: none;
+	text-align: center;
+}
+a:hover{
+	font-size: 1.6rem;
+	color: rgb(255 255 50 / 75%);
+}
